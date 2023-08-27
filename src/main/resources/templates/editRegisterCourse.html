@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Register</title>
+</head>
+<body>
+    <h1>Add Register</h1>
+    
+    <form action="/saveEditedRegister" method="post">
+        <input type="hidden" name="id" th:value="${register.id}">
+        
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" th:value="${register.course}" required>
+        <br>
+        
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" th:value="${register.name}" required>
+        <br>
+        
+        <label for="address">Student Address:</label>
+        <input type="text" id="address" name="address" th:value="${register.address}" required>
+        <br>
+        
+        <label for="email">Student Email:</label>
+        <input type="email" id="email" name="email" th:value="${register.email}" required>
+        <br>
+        
+        <label for="password">Student Password:</label>
+        <input type="password" id="password" name="password" th:value="${register.password}" required>
+        <br>
+        
+    
+        
+        <button type="submit">Save Changes</button>
+    </form>
+    
+    
+    
+    <a href="/admindashboard">Back to Admin Dashboard</a>
+</body>
+</html>
