@@ -3,11 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 98%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            padding: 1% 0;
+            font-size: xxx-large;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Register Student</h1>
+    <h2>Register Student</h2>
     
-    <form action="/saveStudent" method="post">
+    <form id="StudentForm" action="/saveStudent" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br>
@@ -27,11 +87,9 @@
         <button type="submit">Save Student</button>
     </form>
 
-
-
-    <h1>Register Admin</h1>
+    <h2>Register Admin</h2>
     
-    <form action="/saveAdmin" method="post">
+    <form id="AdminForm" action="/saveAdmin" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br>
