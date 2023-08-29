@@ -1,6 +1,12 @@
-package com.example.demo;
+package com.example.demo.Presentationlayer;
 
 
+import com.example.demo.Business.IStudentRepo;
+import com.example.demo.Business.Iregister;
+import com.example.demo.Business.administratorService;
+import com.example.demo.dataacces.administrator;
+import com.example.demo.dataacces.register;
+import com.example.demo.dataacces.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

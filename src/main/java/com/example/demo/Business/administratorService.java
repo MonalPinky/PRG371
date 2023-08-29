@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.Business;
 
+import com.example.demo.Business.IadministratorRepo;
+import com.example.demo.dataacces.administrator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

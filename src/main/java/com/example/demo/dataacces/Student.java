@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.dataacces;
 
 
 import jakarta.persistence.Column;

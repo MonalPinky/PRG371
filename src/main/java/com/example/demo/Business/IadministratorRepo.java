@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.Business;
 
+import com.example.demo.dataacces.administrator;
+import com.example.demo.dataacces.administrator;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
